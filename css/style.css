@@ -62,8 +62,16 @@ main{
     height: 80px;
     width: 100%;
     box-shadow: 0 0 20px #ccc;
+    margin-bottom: 5%;
 }
 
+.itemclick{
+    background: rgb(178, 223, 148);
+}
+.itemclick{
+    text-decoration: line-through;
+    color: #ccc;
+}
 .icone{
     flex: 20%;
     /* border: 1px solid orangered; */
@@ -98,4 +106,8 @@ main{
     padding: 10px;
     height: 80px;
     width: 100%;
+}
+
+.mdi-check-circle{
+    color: green;
 }
