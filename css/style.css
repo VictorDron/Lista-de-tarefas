@@ -1,60 +1,58 @@
-*{ 
+* {
     box-sizing: border-box;
+  }
+  
+  body {
     margin: 0;
     padding: 0;
-}
-
-body{
     font-family: Arial, Helvetica, sans-serif;
-    background: whitesmoke;
-}
-h1{
+    background: #eeeeee;
+  }
+  
+  h1 {
     text-align: center;
     font-size: 3rem;
-}
-header{
-
+  }
+  
+  header {
     display: flex;
-    flex-flow:row wrap;
-    width: 90%;
-    /* border: 1px solid red; */
-    margin:auto auto;
+    flex-flow: row wrap;
     align-items: center;
-}
-
-input{
-
+    width: 90%;
+    /* border:1px solid red;*/
+    margin: auto auto;
+  }
+  
+  input {
     height: 120px;
     font-size: 2rem;
     width: 80%;
     padding-left: 10%;
-}
-
-.add{
+  }
+  
+  button.add {
     width: 20%;
     cursor: pointer;
     background: green;
     color: white;
-    font-weight: bolder;
+    font-weight: bold;
     border: none;
     height: 120px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-
-main{
-
+  }
+  
+  main {
     display: flex;
     flex-flow: row wrap;
     width: 90%;
     margin: auto auto;
-    /* border: 1px solid blue; */
+    /* border:1px solid blue;*/
     padding-top: 40px;
-}
-
-.item{
-
-    display:flex;
+  }
+  
+  .item {
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
@@ -62,52 +60,70 @@ main{
     height: 80px;
     width: 100%;
     box-shadow: 0 0 20px #ccc;
-    margin-bottom: 5%;
-}
-
-.itemclick{
-    background: rgb(178, 223, 148);
-}
-.itemclick{
+    margin-bottom: 2%;
+    cursor: pointer;
+  }
+  
+  .item.clicado {
+    background: #d4f6d9;
+  }
+  
+  .item.clicado .item-nome {
     text-decoration: line-through;
-    color: #ccc;
-}
-.icone{
+    color: gray;
+  }
+  
+  .item-icone {
     flex: 20%;
-    /* border: 1px solid orangered; */
+    /* border:1px solid orangered;  */
     text-align: center;
     font-size: 2rem;
-    
-
-}
-
-.nome{
-
+  }
+  
+  .item-nome {
     flex: 55%;
-    /* border: 1px solid deeppink; */
+    /* border:1px solid deeppink;  */
     font-size: 20px;
     font-weight: bold;
-    
-    
-}
-
-.botao{
-
+  }
+  
+  .item-botao {
     flex: 25%;
-    /* border: 1px solid green; */
- 
-}
-
-.delete{
-
+    /* border:1px solid green;    */
+  }
+  
+  .delete {
     background: red;
     color: white;
     border: none;
     padding: 10px;
     height: 80px;
     width: 100%;
-}
-
-.mdi-check-circle{
+    cursor: pointer;
+  }
+  
+  .mdi-check-circle {
     color: green;
-}
+  }
+  
+  footer {
+    display: flex;
+    flex-flow: row-wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background: black;
+    height: 40px;
+    width: 100%;
+  }
+  
+  footer a {
+    color: white;
+  }
+  
+  footer i {
+    color: red;
+    font-size: 22px;
+  }
+  
